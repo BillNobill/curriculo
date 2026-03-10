@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="language-selector">
+        <button id="lang-toggle" class="lang-btn">
+            <span class="lang-text">EN</span>
+            <i class="fas fa-globe"></i>
+        </button>
+    </div>
     <header class="hero">
         <div class="container">
             <div class="hero-layout">
@@ -18,18 +24,22 @@
                     <img src="img/LuizFeltrin.jpeg" alt="Luiz Henrique Zavatini Feltrin" class="profile-img">
                 </div>
                 <div class="hero-text">
-                    <p class="greeting">Desenvolvedor Full Stack & IA</p>
+                    <p class="greeting" data-pt="Desenvolvedor Full Stack & Pesquisador em IA" data-en="Full Stack Developer & AI Researcher">Desenvolvedor Full Stack & Pesquisador em IA</p>
                     <h1 class="name">Luiz Henrique Zavatini Feltrin</h1>
-                    <h2 class="role">Transformando ideias em produtos escaláveis</h2>
-                    <p class="bio">
-                        Especialista em <strong>Flutter, Dart, Python e Postgres</strong>. 
-                        Com 31 repositórios no GitHub e participação ativa em comunidades Pro, foco na criação de MVPs robustos e soluções inteligentes.
-                        Vencedor de diversos Hackathons, aplico mentalidade ágil e design UI/UX em cada linha de código.
+                    <h2 class="role" data-pt="Transformando pesquisa acadêmica em produtos escaláveis" data-en="Transforming academic research into scalable products">Transformando pesquisa acadêmica em produtos escaláveis</h2>
+                    <p class="bio" data-pt="Especialista em Flutter, Python e Inteligência Artificial. Com premiações em Hackathons e Olimpíadas Científicas (OBMEP), foco na criação de MVPs robustos e soluções inteligentes que unem ciência e código." data-en="Specialist in Flutter, Python, and AI. Awarded in Hackathons and Scientific Olympiads (OBMEP), focusing on creating robust MVPs and intelligent solutions that merge science and code.">
+                        Especialista em <strong>Flutter, Python e Inteligência Artificial</strong>. 
+                        Com premiações em Hackathons e Olimpíadas Científicas (OBMEP), foco na criação de MVPs robustos e soluções inteligentes que unem ciência e código.
                     </p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/luizhzf/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/billnobill" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="mailto:luizhzfeltrin@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <div class="hero-actions">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/luizhzf/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/billnobill" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="mailto:luizhzfeltrin@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <a href="content/Currículo do Sistema de Currículos Lattes (Luiz Henrique Zavatini Feltrin).pdf" target="_blank" class="btn-primary" data-pt="Download CV Lattes" data-en="Download Academic CV">
+                            <i class="fas fa-file-download"></i> Download CV Lattes
+                        </a>
                     </div>
                 </div>
             </div>
@@ -39,31 +49,86 @@
     <main>
         <section class="about section" id="about">
             <div class="container">
-                <h2 class="section-title">Sobre Mim</h2>
+                <h2 class="section-title" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
                 <div class="about-content">
-                    <p>
+                    <p data-pt="Sou um desenvolvedor apaixonado por tecnologia e inovação, atualmente cursando Bacharelado em Inteligência Artificial. Minha trajetória é marcada por uma busca constante por desafios, o que me levou a participar de maratonas de programação e hackathons desde o início da minha formação técnica no IFPR." data-en="I am a developer passionate about technology and innovation, currently pursuing a Bachelor's in Artificial Intelligence. My journey is marked by a constant search for challenges, which led me to participate in programming marathons and hackathons since the beginning of my technical training at IFPR.">
                         Sou um desenvolvedor apaixonado por tecnologia e inovação, atualmente cursando <strong>Bacharelado em Inteligência Artificial</strong>. Minha trajetória é marcada por uma busca constante por desafios, o que me levou a participar de maratonas de programação e hackathons desde o início da minha formação técnica no IFPR.
                     </p>
-                    <p>
+                    <p data-pt="Acredito que a tecnologia deve ser acessível e funcional. Por isso, foco em desenvolver interfaces intuitivas com Flutter e backends performáticos com Python, sempre integrando bancos de dados relacionais como PostgreSQL para garantir a integridade e escalabilidade dos dados." data-en="I believe technology should be accessible and functional. Therefore, I focus on developing intuitive interfaces with Flutter and high-performance backends with Python, always integrating relational databases like PostgreSQL to ensure data integrity and scalability.">
                         Acredito que a tecnologia deve ser acessível e funcional. Por isso, foco em desenvolver interfaces intuitivas com Flutter e backends performáticos com Python, sempre integrando bancos de dados relacionais como PostgreSQL para garantir a integridade e escalabilidade dos dados.
                     </p>
                 </div>
             </div>
         </section>
 
+        <section class="experience section" id="experience">
+            <div class="container">
+                <h2 class="section-title" data-pt="Experiência & Pesquisa" data-en="Experience & Research">Experiência & Pesquisa</h2>
+                <div class="experience-list">
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h3>MetaBIX Biotech</h3>
+                            <span class="exp-date" data-pt="2026 - Presente" data-en="2026 - Present">2026 - Presente</span>
+                        </div>
+                        <p class="exp-role" data-pt="Analista de Dados & Desenvolvedor de Modelos de IA" data-en="Data Analyst & AI Model Developer">Analista de Dados & Desenvolvedor de Modelos de IA</p>
+                        <ul class="exp-details">
+                            <li data-pt="Desenvolvimento e otimização de modelos de Inteligência Artificial voltados para biotecnologia." data-en="Development and optimization of AI models focused on biotechnology.">Desenvolvimento e otimização de modelos de Inteligência Artificial voltados para biotecnologia.</li>
+                            <li data-pt="Análise avançada de dados e implementação de pipelines de IA para inovação." data-en="Advanced data analysis and implementation of AI pipelines for innovation.">Análise avançada de dados e implementação de pipelines de IA para inovação.</li>
+                            <li data-pt="Efetivado após 12 meses como Estagiário de IA & Dados (2025-2026)." data-en="Promoted after 12 months as an AI & Data Intern (2025-2026).">Efetivado após 12 meses como Estagiário de IA & Dados (2025-2026).</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h3 data-pt="Calculadora Científica Acessível" data-en="Accessible Scientific Calculator">Calculadora Científica Acessível</h3>
+                            <span class="exp-date" data-pt="2025 - Presente" data-en="2025 - Present">2025 - Presente</span>
+                        </div>
+                        <p class="exp-role" data-pt="Bolsista de Iniciação Científica" data-en="Scientific Initiation Scholar">Bolsista de Iniciação Científica</p>
+                        <ul class="exp-details">
+                            <li data-pt="Desenvolvimento de ferramenta matemática inclusiva para pessoas com deficiência visual." data-en="Development of an inclusive mathematical tool for visually impaired people.">Desenvolvimento de ferramenta matemática inclusiva para pessoas com deficiência visual.</li>
+                            <li data-pt="Utilização de Python para processamento lógico e interfaces acessíveis." data-en="Usage of Python for logical processing and accessible interfaces.">Utilização de Python para processamento lógico e interfaces acessíveis.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h3 data-pt="Coin-IF: Criptomoeda Educacional" data-en="Coin-IF: Educational Cryptocurrency">Coin-IF: Criptomoeda Educacional</h3>
+                            <span class="exp-date" data-pt="2023 - 2024" data-en="2023 - 2024">2023 - 2024</span>
+                        </div>
+                        <p class="exp-role" data-pt="Bolsista de Iniciação Científica (IFPR)" data-en="Scientific Initiation Scholar (IFPR)">Bolsista de Iniciação Científica (IFPR)</p>
+                        <ul class="exp-details">
+                            <li data-pt="Desenvolvimento e estudo de viabilidade de uma criptomoeda educacional baseada em Blockchain." data-en="Development and feasibility study of a Blockchain-based educational cryptocurrency.">Desenvolvimento e estudo de viabilidade de uma criptomoeda educacional baseada em Blockchain.</li>
+                            <li data-pt="Pesquisa focada em Segurança da Informação, Criptografia e percepção de valor em trocas digitais." data-en="Research focused on Information Security, Cryptography, and value perception in digital exchanges.">Pesquisa focada em Segurança da Informação, Criptografia e percepção de valor em trocas digitais.</li>
+                            <li data-pt="Publicação de resultados em congressos científicos como ERAD e SEPIN." data-en="Publication of results in scientific conferences such as ERAD and SEPIN.">Publicação de resultados em congressos científicos como ERAD e SEPIN.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h3>OBMEP</h3>
+                            <span class="exp-date" data-pt="2022 - 2023" data-en="2022 - 2023">2022 - 2023</span>
+                        </div>
+                        <p class="exp-role" data-pt="Bolsista do Programa de Iniciação Científica (PIC)" data-en="Scientific Initiation Program Scholar (PIC)">Bolsista do Programa de Iniciação Científica (PIC)</p>
+                        <ul class="exp-details">
+                            <li data-pt="Estudo avançado em matemática, lógica e resolução de problemas complexos." data-en="Advanced study in mathematics, logic, and complex problem-solving.">Estudo avançado em matemática, lógica e resolução de problemas complexos.</li>
+                            <li data-pt="Desenvolvimento de raciocínio analítico através de mentorias acadêmicas nacionais." data-en="Analytical reasoning development through national academic mentorships.">Desenvolvimento de raciocínio analítico através de mentorias acadêmicas nacionais.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="projects section" id="projects">
             <div class="container">
-                <h2 class="section-title">Projetos em Destaque</h2>
+                <h2 class="section-title" data-pt="Projetos em Destaque" data-en="Featured Projects">Projetos em Destaque</h2>
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-header">
-                            <i class="fas fa-microscope project-icon"></i>
-                            <h3>MetaBIX Biotech</h3>
+                            <i class="fas fa-smog project-icon"></i>
+                            <h3>GASense</h3>
                         </div>
-                        <p>Desenvolvimento de soluções tecnológicas para biotecnologia, focando em análise de dados e processos inovadores.</p>
+                        <p data-pt="Sistema completo de sensoriamento ambiental com monitoramento em tempo real via Mobile, Web e Nuvem." data-en="Complete environmental sensing system with real-time monitoring via Mobile, Web, and Cloud.">Sistema completo de sensoriamento ambiental com monitoramento em tempo real via Mobile, Web e Nuvem.</p>
                         <div class="project-tags">
-                            <span>Python</span>
-                            <span>Data Science</span>
+                            <span>IoT</span>
+                            <span>Flutter</span>
+                            <span>Cloud</span>
                         </div>
                     </div>
                     <div class="project-card">
@@ -71,7 +136,7 @@
                             <i class="fas fa-traffic-light project-icon"></i>
                             <h3>Traffic Lights Intelligence</h3>
                         </div>
-                        <p>Sistema inteligente para gestão de tráfego urbano utilizando algoritmos de IA para otimização de fluxo.</p>
+                        <p data-pt="Sistema inteligente para gestão de tráfego urbano utilizando algoritmos de IA para otimização de fluxo." data-en="Intelligent system for urban traffic management using AI algorithms for flow optimization.">Sistema inteligente para gestão de tráfego urbano utilizando algoritmos de IA para otimização de fluxo.</p>
                         <div class="project-tags">
                             <span>IA</span>
                             <span>Smart Cities</span>
@@ -80,23 +145,12 @@
                     <div class="project-card">
                         <div class="project-header">
                             <i class="fas fa-notes-medical project-icon"></i>
-                            <h3>Saúde Digital</h3>
+                            <h3 data-pt="Saúde Digital" data-en="Digital Health">Saúde Digital</h3>
                         </div>
-                        <p>Plataforma de monitoramento bucal e saúde preventiva, integrando hardware e software para melhor acompanhamento clínico.</p>
+                        <p data-pt="Plataforma de monitoramento bucal e saúde preventiva, integrando hardware e software para melhor acompanhamento clínico." data-en="Oral monitoring and preventive health platform, integrating hardware and software for better clinical follow-up.">Plataforma de monitoramento bucal e saúde preventiva, integrando hardware e software para melhor acompanhamento clínico.</p>
                         <div class="project-tags">
                             <span>Flutter</span>
                             <span>IoT</span>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-calculator project-icon"></i>
-                            <h3>Calculadora Científica Acessível</h3>
-                        </div>
-                        <p>Projeto focado em acessibilidade, permitindo que usuários com diferentes necessidades utilizem ferramentas matemáticas complexas.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Acessibilidade</span>
                         </div>
                     </div>
                 </div>
@@ -105,10 +159,10 @@
 
         <section class="skills section" id="skills">
             <div class="container">
-                <h2 class="section-title">Tech Stack</h2>
+                <h2 class="section-title" data-pt="Tecnologias" data-en="Tech Stack">Tecnologias</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>Frontend & Mobile</h3>
+                        <h3 data-pt="Frontend & Mobile" data-en="Frontend & Mobile">Frontend & Mobile</h3>
                         <div class="skill-tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">Dart</span>
@@ -117,7 +171,7 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3>Backend & IA</h3>
+                        <h3 data-pt="Backend & IA" data-en="Backend & AI">Backend & IA</h3>
                         <div class="skill-tags">
                             <span class="tag">Python</span>
                             <span class="tag">PostgreSQL</span>
@@ -126,7 +180,7 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3>Ferramentas</h3>
+                        <h3 data-pt="Ferramentas" data-en="Tools">Ferramentas</h3>
                         <div class="skill-tags">
                             <span class="tag">Git / GitHub</span>
                             <span class="tag">Power BI</span>
@@ -140,25 +194,49 @@
 
         <section class="achievements section" id="achievements">
             <div class="container">
-                <h2 class="section-title">Conquistas & Hackathons</h2>
+                <h2 class="section-title" data-pt="Publicações & Pesquisa" data-en="Publications & Research">Publicações & Pesquisa</h2>
+                <div class="experience-list" style="margin-bottom: 5rem;">
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h3>ERAD / SEPIN</h3>
+                            <span class="exp-date">2023 - 2024</span>
+                        </div>
+                        <p class="exp-role" data-pt="Artigos Publicados em Eventos Científicos" data-en="Papers Published in Scientific Events">Artigos Publicados em Eventos Científicos</p>
+                        <p style="color: var(--text-secondary);" data-pt="Publicação de trabalhos sobre Computação de Alto Desempenho e Inovação Tecnológica." data-en="Publication of works on High-Performance Computing and Technological Innovation.">Publicação de trabalhos sobre Computação de Alto Desempenho e Inovação Tecnológica.</p>
+                    </div>
+                </div>
+
+                <h2 class="section-title" data-pt="Conquistas & Hackathons" data-en="Achievements & Hackathons">Conquistas & Hackathons</h2>
                 <div class="cards-grid">
                     <div class="card">
                         <div class="card-icon"><i class="fas fa-trophy"></i></div>
                         <h3>Hackatour Cataratas</h3>
-                        <p class="card-meta">Instituto IDESTUR • 2024</p>
-                        <p>Desenvolvimento de soluções disruptivas para o setor de turismo.</p>
+                        <p class="card-meta" data-pt="1º Lugar • 2024" data-en="1st Place • 2024">1º Lugar • 2024</p>
+                        <p data-pt="Desenvolvimento de soluções disruptivas para o setor de turismo." data-en="Development of disruptive solutions for the tourism sector.">Desenvolvimento de soluções disruptivas para o setor de turismo.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-medal"></i></div>
+                        <h3>OBMEP</h3>
+                        <p class="card-meta" data-pt="Premiado • Múltiplas Edições" data-en="Awarded • Multiple Editions">Premiado • Múltiplas Edições</p>
+                        <p data-pt="Reconhecimento nacional em excelência em matemática e raciocínio lógico." data-en="National recognition for excellence in mathematics and logical reasoning.">Reconhecimento nacional em excelência em matemática e raciocínio lógico.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-square-root-alt"></i></div>
+                        <h3>Canguru de Matemática</h3>
+                        <p class="card-meta" data-pt="Premiado • Múltiplas Edições" data-en="Awarded • Multiple Editions">Premiado • Múltiplas Edições</p>
+                        <p data-pt="Premiações internacionais que validam habilidades analíticas avançadas." data-en="International awards validating advanced analytical skills.">Premiações internacionais que validam habilidades analíticas avançadas.</p>
                     </div>
                     <div class="card">
                         <div class="card-icon"><i class="fas fa-leaf"></i></div>
                         <h3>AgroHackathon</h3>
-                        <p class="card-meta">UFPR • 2023</p>
-                        <p>Gestão e inovação tecnológica aplicada ao agronegócio sustentável.</p>
+                        <p class="card-meta" data-pt="Destaque • 2023" data-en="Highlight • 2023">Destaque • 2023</p>
+                        <p data-pt="Inovação tecnológica aplicada ao agronegócio sustentável." data-en="Technological innovation applied to sustainable agribusiness.">Inovação tecnológica aplicada ao agronegócio sustentável.</p>
                     </div>
                     <div class="card">
                         <div class="card-icon"><i class="fas fa-rocket"></i></div>
                         <h3>Startup Weekend</h3>
                         <p class="card-meta">Toledo • 2024</p>
-                        <p>Criação de modelos de negócio e validação de MVPs em 54 horas.</p>
+                        <p data-pt="Criação e validação de MVPs sob pressão e mentalidade lean." data-en="MVP creation and validation under pressure with a lean mindset.">Criação e validação de MVPs sob pressão e mentalidade lean.</p>
                     </div>
                 </div>
             </div>
@@ -166,26 +244,26 @@
 
         <section class="education section" id="education">
             <div class="container">
-                <h2 class="section-title">Jornada Acadêmica</h2>
+                <h2 class="section-title" data-pt="Jornada Acadêmica" data-en="Academic Journey">Jornada Acadêmica</h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>Bacharelado em Inteligência Artificial</h3>
-                            <p class="timeline-meta">Biopark Educação • 2025 - 2028</p>
+                            <h3 data-pt="Bacharelado em Inteligência Artificial" data-en="B.S. in Artificial Intelligence">Bacharelado em Inteligência Artificial</h3>
+                            <p class="timeline-meta" data-pt="Biopark Educação • 2025 - 2028" data-en="Biopark Education • 2025 - 2028">Biopark Educação • 2025 - 2028</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>Técnico em Informática para Internet</h3>
+                            <h3 data-pt="Técnico em Informática para Internet" data-en="Technician in Computing for Internet">Técnico em Informática para Internet</h3>
                             <p class="timeline-meta">IFPR • 2022 - 2024</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>Inglês Avançado</h3>
+                            <h3 data-pt="Inglês Avançado" data-en="Advanced English">Inglês Avançado</h3>
                             <p class="timeline-meta">Wizard • 2021 - 2026</p>
                         </div>
                     </div>
@@ -196,13 +274,35 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Luiz Henrique Zavatini Feltrin. Todos os direitos reservados.</p>
+            <p data-pt="&copy; 2026 Luiz Henrique Zavatini Feltrin. Todos os direitos reservados." data-en="&copy; 2026 Luiz Henrique Zavatini Feltrin. All rights reserved.">&copy; 2026 Luiz Henrique Zavatini Feltrin. Todos os direitos reservados.</p>
             <div class="footer-links">
-                <a href="#about">Sobre</a>
-                <a href="#projects">Projetos</a>
-                <a href="#skills">Habilidades</a>
+                <a href="#about" data-pt="Sobre" data-en="About">Sobre</a>
+                <a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a>
+                <a href="#skills" data-pt="Tecnologias" data-en="Skills">Tecnologias</a>
             </div>
         </div>
     </footer>
+    <script>
+        const langToggle = document.getElementById('lang-toggle');
+        const langText = langToggle.querySelector('.lang-text');
+        let currentLang = 'pt';
+
+        langToggle.addEventListener('click', () => {
+            currentLang = currentLang === 'pt' ? 'en' : 'pt';
+            langText.textContent = currentLang === 'pt' ? 'EN' : 'PT';
+            
+            document.querySelectorAll('[data-pt]').forEach(el => {
+                const text = el.getAttribute(`data-${currentLang}`);
+                if (el.tagName === 'A' && el.classList.contains('btn-primary')) {
+                    const icon = el.querySelector('i').outerHTML;
+                    el.innerHTML = `${icon} ${text}`;
+                } else if (el.tagName === 'A' || el.tagName === 'SPAN' || el.tagName === 'H2' || el.tagName === 'P' || el.tagName === 'H3' || el.tagName === 'LI') {
+                    el.textContent = text;
+                }
+            });
+            
+            document.documentElement.lang = currentLang === 'pt' ? 'pt-BR' : 'en-US';
+        });
+    </script>
 </body>
 </html>
